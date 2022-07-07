@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="logo__wrapper">
+        <img src="/images/logo.svg" alt="" />
+      </div>
+      <div class="calc__wrapper">
+        <div class="calc__action">
+          <div class="calc__input">
+            <label class="input_label" for="money">Bill</label>
+            <div tabindex="1" class="input_wrpper A">
+              <div class="img_wrap">
+                <img class="icon" src="./images/icon-dollar.svg" alt="" />
+              </div>
+
+              <input class="input" type="number" name="money" id="bill" />
+            </div>
+          </div>
+          <div class="calc__btn">
+            <label class="input_label">Bill Select Tip %</label>
+            <div class="btn__wrapper">
+              <button value="A" class="btn">5%</button>
+              <button value="B" class="btn">10%</button>
+              <button value="C" class="btn">15%</button>
+              <button value="D" class="btn">25%</button>
+              <button value="E" class="btn">50%</button>
+              <input
+                type="number"
+                placeholder="custom"
+                class="btn btn_custom"
+              />
+            </div>
+          </div>
+          <div class="calc__input">
+            <div class="calc__text">
+              <label class="input_label" for="people">Number of People</label>
+              <p class="zero">Can't be zero</p>
+            </div>
+            <div tabindex="1" class="input_wrpper wrapA">
+              <div class="img_wrap">
+                <img class="icon" src="./images/icon-person.svg" alt="" />
+              </div>
+              <input class="input" type="text" name="people" id="people" />
+            </div>
+          </div>
+        </div>
+        <div class="calc__display">
+          <div class="display__tip">
+            <div class="text">
+              <div class="top__text">Tip Amount</div>
+              <div class="bottom__text">/ person</div>
+            </div>
+            <div id="tip" class="amount">$0.00</div>
+          </div>
+
+          <div class="tip__amount">
+            <div class="text">
+              <div class="top__text">Total</div>
+              <div class="bottom__text">/ person</div>
+            </div>
+            <div id="person" class="amount">$0.00</div>
+          </div>
+
+          <div class="display__btn">
+            <div class="btn__wraper"><button class="reset">reset</button></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <div class="attribution">Coded by <a href="#">Your Name Here</a>.</div> -->
+    <script src="script.js"></script>
+  </body>
+</html>
